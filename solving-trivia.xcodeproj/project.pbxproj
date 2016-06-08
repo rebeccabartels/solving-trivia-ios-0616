@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1245ABDBDC24417EBAE26E87 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F0F7179A22477AB280F236 /* main.m */; };
 		4119FCA523E97339CD0C8C0A /* libPods-unit_tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DDC87EE100C82D05B7A7C5DA /* libPods-unit_tests.a */; };
+		43383AC61D07ABF000B52026 /* FISAppDelegate.m draft in Resources */ = {isa = PBXBuildFile; fileRef = 43383AC51D07ABF000B52026 /* FISAppDelegate.m draft */; };
 		56360577974143E4B1C04611 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E18FCBBA95B948D3989B3220 /* Foundation.framework */; };
 		749BBE7D305B4E29B4F3A991 /* FISAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 287369C61970455F92CDE01C /* FISAppDelegate.m */; };
 		E2D592C01B011E7000479820 /* FISAppDelegateSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D592BE1B011E7000479820 /* FISAppDelegateSpec.m */; };
@@ -28,6 +29,7 @@
 /* Begin PBXFileReference section */
 		09685129E49740D6ABC5699F /* UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		287369C61970455F92CDE01C /* FISAppDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FISAppDelegate.m; sourceTree = "<group>"; };
+		43383AC51D07ABF000B52026 /* FISAppDelegate.m draft */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "FISAppDelegate.m draft"; sourceTree = "<group>"; };
 		4528AC2943F4467E8481B256 /* UnitTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "UnitTests-Info.plist"; sourceTree = "<group>"; };
 		50743FFDE81E486AB11CAF50 /* FISAppDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FISAppDelegate.h; sourceTree = "<group>"; };
 		50F0F7179A22477AB280F236 /* main.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 			children = (
 				50743FFDE81E486AB11CAF50 /* FISAppDelegate.h */,
 				287369C61970455F92CDE01C /* FISAppDelegate.m */,
+				43383AC51D07ABF000B52026 /* FISAppDelegate.m draft */,
 				A4A4B55E8785426086A9748C /* Resources */,
 			);
 			path = "solving-trivia";
@@ -248,6 +251,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43383AC61D07ABF000B52026 /* FISAppDelegate.m draft in Resources */,
 				EA8128672C78484E92656646 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,0 +1,122 @@
+//  FISAppDelegate.m
+
+#import "FISAppDelegate.h"
+
+    
+
+    NSArray *states =[[[NSArray alloc] initWithObjects:[[NSNumber alloc]initWithObjects:states, [[NSDictionary alloc] initWithObjectsAndKeys:(NSString *self), nil :100.00], nil;]]] }}
+
+return YES;		      return YES;
+}		  }
+
+-- (NSString *)solveTrivia {		 +
+                                       
+                                       -    NSDictionary *stateCapitals= @{		 +Write your method here
+                                       -                                   @"Alabama":@"Montgomery",
+                                       -                                   @"Alaska":@"Juneau",
+                                       -                                   @"Arizona":@"Phoenix",
+                                       -                                   @"Arkansas":@"Little Rock",
+                                       -                                   @"California":@"Sacramento",
+                                       -                                   @"Colorado":@"Denver",
+                                       -                                   @"Connecticut":@"Hartford",
+                                       -                                   @"Delaware":@"Dover",
+                                       -                                   @"Florida":@"Tallahassee",
+                                       -                                   @"Georgia":@"Atlanta",
+                                       -                                   @"Hawaii":@"Honolulu",
+                                       -                                   @"Idaho":@"Boise",
+                                       -                                   @"Illinois":@"Springfield",
+                                       -                                   @"Indiana":@"Indianapolis",
+                                       -                                   @"Iowa":@"Des Moines",
+                                       -                                   @"Kansas":@"Topeka",
+                                       -                                   @"Kentucky":@"Frankfort",
+                                       -                                   @"Lousiana":@"Baton Rouge",
+                                       -                                   @"Maine":@"Augusta",
+                                       -                                   @"Maryland":@"Annapolis",
+                                       -                                   @"Massassachusetts":@"Boston",
+                                       -                                   @"Michigan":@"Lansing",
+                                       -                                   @"Minnesota":@"Saint Paul",
+                                       -                                   @"Mississippi":@"Jackson",
+                                       -                                   @"Missouri":@"Jefferson City",
+                                       -                                   @"Montana":@"Helena",
+                                       -                                   @"Nebraska":@"Lincoln",
+                                       -                                   @"Nevada":@"Carson City",
+                                       -                                   @"New Hampshire":@"Concord",
+                                       -                                   @"New Jersey":@"Trenton",
+                                       -                                   @"New Mexico":@"Santa Fe",
+                                       -                                   @"New York":@"Albany",
+                                       -                                   @"North Carolina":@"Raleigh",
+                                       -                                   @"North Dakota":@"Bismarck",
+                                       -                                   @"Ohio":@"Columbus",
+                                       -                                   @"Oklahoma":@"Oklahoma City",
+                                       -                                   @"Oregon":@"Salem",
+                                       -                                   @"Pennsylvania":@"Harrisburg",
+                                       -                                   @"Rhode Island":@"Providence",
+                                       -                                   @"South Carolina":@"Columbia",
+                                       -                                   @"South Dakota":@"Pierre",
+                                       -                                   @"Tennessee":@"Nashville",
+                                       -                                   @"Texas":@"Austin",
+                                       -                                   @"Utah":@"Salt Lake City",
+                                       -                                   @"Vermont":@"Montpelier",		
+                                       -                                   @"Virgina":@"Richmond",		
+                                       -                                   @"Washington":@"Olympia",		
+                                       -                                   @"West Virginia":@"Charleston",		
+                                       -                                   @"Wisconsin":@"Madison",		
+                                       -                                   @"Wyoming":@"Cheyenne"		
+                                       -                                   };		
+                                       -    		
+                                       -    		
+                                       -    NSString *answer;		
+                                       
+                                       -    for (NSString *keyState in stateCapitals) {		 +*/
+    -        		
+    -        BOOL matchFound = false;		
+    -        		
+    -        NSString *state = keyState;		
+    -        NSString *capital = stateCapitals[keyState];		
+    -        		
+    -        state = [state lowercaseString];		
+    -        capital = [capital lowercaseString];		
+    -        		
+    -        state = [state stringByReplacingOccurrencesOfString:@" " withString:@""];		
+    -        capital = [capital stringByReplacingOccurrencesOfString:@" " withString:@""];		
+    -        		
+    -        for (NSUInteger stateIndex = 0; stateIndex < state.length; stateIndex++) {		
+        -            unichar stateLetter = [state characterAtIndex:stateIndex];		
+        -            for (NSUInteger capIndex = 0; capIndex < capital.length; capIndex++) {		
+            -                unichar capLetter = [capital characterAtIndex:capIndex];		
+            -                if (stateLetter == capLetter) {		
+                -                    matchFound = true;		
+                -                }		
+            -                		
+            -            }		
+        -            		
+        -        }		
+    -        if (!matchFound) {		
+        -            answer = keyState;		
+        -        }		
+    -        		
+    -        		
+    -        		
+    -    }		
+-		
+-    return answer;		
+-}
+
+// compare 1 state at a time with its capital
+
+
+
+
+
+// now we have access to each state within states. Now, compare 1 state with corresponding capital.
+// capture that capital/value.
+// In a for in loop, go over the letters in each word (values). How do you pull the letters out?
+//second for loop -- Go through and get each letter of each state. And within the for loop,
+//within our second for loop, when we get each letter of the state, check capital and see if letter is present. Resulting in yes or no.
+// if letter is present, BOOL switches to NO, if it is not present it remains YES.
+// while BOOL says YES, keep tracking the letters with a while loop. So, the second for loop, the while loop, and the BOOL are all within this one loop.
+//when while loop is done with one set of state and capital, then it goes on to the next state's letters
+// How to get from YES BOOL to the result (SD) --- An If then statement: If BOOL is YES, then return the correct answer (state) ***Figure out how to get result to be South Dakota.
+// compare the letters.
+
+@end
